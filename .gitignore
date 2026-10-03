@@ -1,0 +1,28 @@
+# ============================================================
+#  .gitignore
+#  Daftar file yang TIDAK ikut di-upload ke GitHub.
+# ============================================================
+
+# File log
+*.log
+
+# File backup / sementara
+*.tmp
+*.bak
+*~
+Thumbs.db
+desktop.ini
+
+# File dari macOS
+.DS_Store
+
+# Folder ini SENGAJA ikut di-upload karena project butuh berjalan:
+#   - config/       (berisi koneksi database)
+#   - database.sql  (berisi struktur tabel)
+#   - assets/       (berisi foto profil, thumbnail, dan CV)
+#
+# Catatan keamanan:
+#   koneksi database memakai user "root" dengan password kosong,
+#   yaitu settingan default XAMPP untuk-development lokal.
+#   Jangan pakai kredensial ini di server publik / hosting.
+# ============================================================
